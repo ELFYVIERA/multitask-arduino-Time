@@ -55,10 +55,6 @@ void loop() {
     analogWrite(ledPin_2, 0);
   }
 
-
-
-
-
   //led servo
   if((currentTime - servoPrevTime) >= servoTriggTime){
     servo.write(i);
