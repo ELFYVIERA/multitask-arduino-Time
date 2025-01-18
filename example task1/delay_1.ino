@@ -11,6 +11,7 @@
 
    The HIGH duration = `trigg_time - rise_time`
 */
+ unsigned long int currentTime = 0;
 
 // declaration for leds pin
 const int ledPin_1 = 13;                              
@@ -42,7 +43,6 @@ void setup() {
   Serial.begin(9600);                               // Initialize the serial communication at baud rate 9600
 }
 void loop() {
-  unsigned long int currentTime = 0;
   currentTime = millis();
 
   //analyze  for led 1
